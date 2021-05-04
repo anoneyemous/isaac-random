@@ -1,5 +1,5 @@
 function randomize(){
-  var characters = document.querySelectorAll("input[id^='nc']");
+  var characters = document.querySelectorAll("input[id^='nc'], input[id^='tc']");
   var bosses = document.querySelectorAll("input[id^='eb']");
 
   var submit = document.getElementById("submit");
