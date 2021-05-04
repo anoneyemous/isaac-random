@@ -1,0 +1,129 @@
+body {
+  background-image: url("img/bg.png");
+  background-repeat: repeat-y;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  width: 55%;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  font-size: 48px;
+}
+
+label {
+  /* border: 1px solid #fff; */
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  /* border: 1px solid grey; */
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* :checked + label {
+  border-color: #ddd;
+} */
+
+:checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked + label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* Style the button that is used to open and close the collapsible content
+.collapsible {
+ background-color: #eee;
+ color: #444;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+}
+/*
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .collapsible:hover {
+ background-color: #ccc;
+} */
+
+/* Style the collapsible content. Note: hidden by default */
+/* .content {
+ padding: 0 18px;
+ display: all;
+ overflow: hidden;
+ background-color: #f1f1f1;
+} */
+
+.result-text {
+  padding: 18px 18px;
+  text-align: center;
+  font-family: isaacgame;
+  color: #f1f1f1;
+}
+
+/* Add Isaac font */
+@font-face {
+  font-family: isaacgame;
+  src: url(IsaacGame.ttf) format("truetype");
+  src: url(isaacgame.woff) format("woff");
+  src: url(isaacgame.woff2) format("woff2");
+}
+
+/* change button font */
+button {
+  font-family: isaacgame;
+}
