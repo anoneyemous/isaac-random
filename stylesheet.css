@@ -14,6 +14,7 @@ ul {
 li {
   display: inline-block;
   align-items: center;
+  vertical-align: middle;
 }
 
 input[type="checkbox"] {

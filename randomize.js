@@ -19,8 +19,14 @@ function randomize(){
   }
 
   var random_boss = chosen[Math.floor(Math.random() * chosen.length)];
+  var next_run = "<h1>Try using <b>" + random_char + "</b> to defeat <b>" + random_boss + "</b>!</h1>";
 
-  var next_run = "<h1>Try beating <b>" + random_boss + "</b> as <b>" + random_char + "</b>!</h1>";
+  var boss_image = random_boss.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  var char_image = random_char.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
-  return document.getElementById("result").innerHTML = next_run;
+  document.getElementById("boss_image").src="img/portrait_" + boss_image + ".png";
+  document.getElementById("char_image").src="img/playerportrait_" + char_image + ".png";
+  document.getElementById("vs_image").src="img/vs.png";
+
+  document.getElementById("result").innerHTML = next_run;
 }
