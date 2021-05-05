@@ -17,59 +17,78 @@
 
   <div class="result-text" id="result"></div>
 
+  <!-- <div class="result-text"><h2>Presets</h2></div> -->
+  <div class="result-text"><h2>Presets</h2></div>
+  <div class="center">
+    <ul>
+      <li><input type="checkbox" id="ps1" onClick="abchar(this)" checked />
+        <label for="ps1"><img src="img/preset_afterbirth.png" /></label>
+      </li>
+      <li><input type="checkbox" id="ps2" onClick="repchar(this)" checked />
+        <label for="ps2"><img src="img/preset_repentance.png" /></label>
+      </li>
+      <li><input type="checkbox" id="ps3" onClick="abboss(this)" checked />
+        <label for="ps3"><img src="img/preset_afterbirthbosses.png" /></label>
+      </li>
+      <li><input type="checkbox" id="ps4" onClick="repboss(this)" checked />
+        <label for="ps4"><img src="img/preset_repentancebosses.png" /></label>
+      </li>
+    </ul>
+  </div>
+  <br>
 
   <div class="result-text"><h2>Normal Characters</h2></div>
   <div class="center">
     <ul>
-      <li><input type="checkbox" id="nc1" value="Isaac" checked />
+      <li><input type="checkbox" id="nc1" name="nc" value="Isaac" checked />
         <label for="nc1"><img src="img/playerportrait_isaac.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc2" value="Magdalene" checked />
+      <li><input type="checkbox" id="nc2" name="nc" value="Magdalene" checked />
         <label for="nc2"><img src="img/playerportrait_magdalene.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc3" value="Cain" checked />
+      <li><input type="checkbox" id="nc3" name="nc" value="Cain" checked />
         <label for="nc3"><img src="img/playerportrait_cain.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc4" value="Judas" checked/>
+      <li><input type="checkbox" id="nc4" name="nc" value="Judas" checked/>
         <label for="nc4"><img src="img/playerportrait_judas.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc5" value="??? (Blue Baby)" checked/>
+      <li><input type="checkbox" id="nc5" name="nc" value="??? (Blue Baby)" checked/>
         <label for="nc5"><img src="img/playerportrait_bluebaby.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc6" value="Eve" checked/>
+      <li><input type="checkbox" id="nc6" name="nc" value="Eve" checked/>
         <label for="nc6"><img src="img/playerportrait_eve.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc7" value="Samson" checked/>
+      <li><input type="checkbox" id="nc7" name="nc" value="Samson" checked/>
         <label for="nc7"><img src="img/playerportrait_samson.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc8" value="Azazel" checked/>
+      <li><input type="checkbox" id="nc8" name="nc" value="Azazel" checked/>
         <label for="nc8"><img src="img/playerportrait_azazel.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc9" value="Lazarus" checked/>
+      <li><input type="checkbox" id="nc9" name="nc" value="Lazarus" checked/>
         <label for="nc9"><img src="img/playerportrait_lazarus.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc10" value="Eden" checked/>
+      <li><input type="checkbox" id="nc10" name="nc" value="Eden" checked/>
         <label for="nc10"><img src="img/playerportrait_eden.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc11" value="The Lost" checked/>
+      <li><input type="checkbox" id="nc11" name="nc" value="The Lost" checked/>
         <label for="nc11"><img src="img/playerportrait_thelost.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc12" value="Lilith" checked/>
+      <li><input type="checkbox" id="nc12" name="nc" value="Lilith" checked/>
         <label for="nc12"><img src="img/playerportrait_lilith.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc13" value="Keeper" checked/>
+      <li><input type="checkbox" id="nc13" name="nc" value="Keeper" checked/>
         <label for="nc13"><img src="img/playerportrait_keeper.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc14" value="Apollyon" checked/>
+      <li><input type="checkbox" id="nc14" name="nc" value="Apollyon" checked/>
         <label for="nc14"><img src="img/playerportrait_apollyon.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc15" value="The Forgotten" checked/>
+      <li><input type="checkbox" id="nc15" name="nc" value="The Forgotten" checked/>
         <label for="nc15"><img src="img/playerportrait_theforgotten.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc16" value="Bethany" checked/>
+      <li><input type="checkbox" id="nc16" name="tc" value="Bethany" checked/>
         <label for="nc16"><img src="img/playerportrait_bethany.png" /></label>
       </li>
-      <li><input type="checkbox" id="nc17" value="Jacob & Esau" checked/>
+      <li><input type="checkbox" id="nc17" name="tc" value="Jacob & Esau" checked/>
         <label for="nc17"><img src="img/playerportrait_jacob.png" /></label>
       </li>
     </ul>
@@ -80,55 +99,55 @@
   <div class="result-text"><h2>Tainted Characters</h2></div>
   <div class="center">
     <ul>
-      <li><input type="checkbox" id="tc1" value="Tainted Isaac" checked />
+      <li><input type="checkbox" id="tc1" name="tc" value="Tainted Isaac" checked />
         <label for="tc1"><img src="img/playerportrait_isaac_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc2" value="Tainted Magdalene" checked />
+      <li><input type="checkbox" id="tc2" name="tc" value="Tainted Magdalene" checked />
         <label for="tc2"><img src="img/playerportrait_magdalene_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc3" value="Tainted Cain" checked />
+      <li><input type="checkbox" id="tc3" name="tc" value="Tainted Cain" checked />
         <label for="tc3"><img src="img/playerportrait_cain_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc4" value="Tainted Judas" checked/>
+      <li><input type="checkbox" id="tc4" name="tc" value="Tainted Judas" checked/>
         <label for="tc4"><img src="img/playerportrait_judas_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc5" value="Tainted ??? (Blue Baby)" checked/>
+      <li><input type="checkbox" id="tc5" name="tc" value="Tainted ??? (Blue Baby)" checked/>
         <label for="tc5"><img src="img/playerportrait_bluebaby_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc6" value="Tainted Eve" checked/>
+      <li><input type="checkbox" id="tc6" name="tc" value="Tainted Eve" checked/>
         <label for="tc6"><img src="img/playerportrait_eve_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc7" value="Tainted Samson" checked/>
+      <li><input type="checkbox" id="tc7" name="tc" value="Tainted Samson" checked/>
         <label for="tc7"><img src="img/playerportrait_samson_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc8" value="Tainted Azazel" checked/>
+      <li><input type="checkbox" id="tc8" name="tc" value="Tainted Azazel" checked/>
         <label for="tc8"><img src="img/playerportrait_azazel_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc9" value="Tainted Lazarus" checked/>
+      <li><input type="checkbox" id="tc9" name="tc" value="Tainted Lazarus" checked/>
         <label for="tc9"><img src="img/playerportrait_lazarus_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc10" value="Tainted Eden" checked/>
+      <li><input type="checkbox" id="tc10" name="tc" value="Tainted Eden" checked/>
         <label for="tc10"><img src="img/playerportrait_eden.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc11" value="Tainted The Lost" />
+      <li><input type="checkbox" id="tc11" name="tc" value="Tainted The Lost" />
         <label for="tc11"><img src="img/playerportrait_thelost_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc12" value="Tainted Lilith" checked/>
+      <li><input type="checkbox" id="tc12" name="tc" value="Tainted Lilith" checked/>
         <label for="tc12"><img src="img/playerportrait_lilith_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc13" value="Tainted Keeper" checked/>
+      <li><input type="checkbox" id="tc13" name="tc" value="Tainted Keeper" checked/>
         <label for="tc13"><img src="img/playerportrait_keeper_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc14" value="Tainted Apollyon" checked/>
+      <li><input type="checkbox" id="tc14" name="tc" value="Tainted Apollyon" checked/>
         <label for="tc14"><img src="img/playerportrait_apollyon_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc15" value="Tainted The Forgotten" checked/>
+      <li><input type="checkbox" id="tc15" name="tc" value="Tainted The Forgotten" checked/>
         <label for="tc15"><img src="img/playerportrait_theforgotten_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc16" value="Tainted Bethany" checked/>
+      <li><input type="checkbox" id="tc16" name="tc" value="Tainted Bethany" checked/>
         <label for="tc16"><img src="img/playerportrait_bethany_b.png" /></label>
       </li>
-      <li><input type="checkbox" id="tc17" value="Tainted Jacob" checked/>
+      <li><input type="checkbox" id="tc17" name="tc" value="Tainted Jacob" checked/>
         <label for="tc17"><img src="img/playerportrait_jacob_b.png" /></label>
       </li>
     </ul>
@@ -139,22 +158,22 @@
   <div class="result-text"><h2>Final Bosses</h2></div>
   <div class="center">
     <ul>
-      <li><input type="checkbox" id="eb1" value="??? (Blue Baby)" checked />
+      <li><input type="checkbox" id="eb1" name="ab" value="??? (Blue Baby)" checked />
         <label for="eb1"><img src="img/portrait_102.1_bluebaby.png" /></label>
       </li>
-      <li><input type="checkbox" id="eb2" value="The Lamb" checked />
+      <li><input type="checkbox" id="eb2" name="ab" value="The Lamb" checked />
         <label for="eb2"><img src="img/portrait_273.0_thelamb.png" /></label>
       </li>
-      <li><input type="checkbox" id="eb3" value="Mega Satan" checked />
+      <li><input type="checkbox" id="eb3" name="ab" value="Mega Satan" checked />
         <label for="eb3"><img src="img/portrait_274.0_megasatan.png" /></label>
       </li>
       <li><input type="checkbox" id="eb4" value="Delirium" />
         <label for="eb4"><img src="img/portrait_delirium.png" /></label>
       </li>
-      <li><input type="checkbox" id="eb5" value="Dogma" checked />
+      <li><input type="checkbox" id="eb5" name="rb" value="Dogma" checked />
         <label for="eb5"><img src="img/portrait_dogma.png" /></label>
       </li>
-      <li><input type="checkbox" id="eb6" value="Mother" checked />
+      <li><input type="checkbox" id="eb6" name="rb" value="Mother" checked />
         <label for="eb6"><img src="img/portrait_mother.png" /></label>
       </li>
       <li><input type="checkbox" id="eb7" value="Ultra Greed" />
@@ -167,6 +186,7 @@
 
   <script src="collapse.js"></script>
   <script src="randomize.js"></script>
+  <script src="presets.js"></script>
 
 </body>
 
